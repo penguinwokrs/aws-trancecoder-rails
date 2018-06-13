@@ -1,3 +1,6 @@
+# This repository is a project under construction.
+
+
 # Transcoder
 Short description and motivation.
 
