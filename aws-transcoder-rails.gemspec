@@ -3,7 +3,7 @@
 $LOAD_PATH.push File.expand_path('lib', __dir__)
 
 # Maintain your gem's version:
-require 'transcoder/version'
+require 'aws-transcoder-rails/version'
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
