@@ -1,5 +1,8 @@
 # Created by https://www.gitignore.io/api/rails,rubymine
 
+### Gem ###
+Gemfile.lock
+
 ### Rails ###
 *.rbc
 capybara-*.html
