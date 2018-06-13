@@ -4,7 +4,7 @@ require 'aws_transcoder_rails/config'
 require 'aws_transcoder_rails/preset'
 require 'aws-sdk-elastictranscoder'
 
-module AwsTranceCoderRails
+module AwsTrancecoderRails
   class << self
     attr_writer :outputs
 

@@ -8,7 +8,7 @@ require 'transcoder/version'
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = 'aws-transcoder-rails'
-  s.version     = Transcoder::VERSION
+  s.version     = AwsTrancecoderRails::VERSION
   s.authors     = ['penguinwokrs']
   s.email       = ['dev.and.penguin@gmail.com']
   s.homepage    = 'https://github.com/penguinwokrs'
@@ -19,4 +19,5 @@ Gem::Specification.new do |s|
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
 
   s.add_dependency 'aws-sdk-elastictranscoder', '1.0.0'
+  s.add_development_dependency 'aws-sdk-elastictranscoder', '1.0.0'
 end
