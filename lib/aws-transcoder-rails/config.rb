@@ -4,7 +4,7 @@
 # FIXME: requireすることで発生している。
 require 'Digest'
 
-module Transcoder
+module AwsTranscoderRails
   class << self
     attr_accessor :region,
                   :segment_duration,

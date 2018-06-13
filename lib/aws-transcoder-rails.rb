@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require 'transcoder/config'
-require 'transcoder/preset'
+require 'aws_transcoder_rails/config'
+require 'aws_transcoder_rails/preset'
 require 'aws-sdk-elastictranscoder'
 
-module Transcoder
+module AwsTranceCoderRails
   class << self
     attr_writer :outputs
 
