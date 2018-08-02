@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.version     = AwsTrancecoderRails::VERSION
   s.authors     = ['penguinwokrs']
   s.email       = ['dev.and.penguin@gmail.com']
-  s.homepage    = 'https://github.com/penguinwokrs'
+  s.homepage    = 'https://github.com/penguinwokrs/aws-trancecoder-rails'
   s.summary     = 'AWS Elastic Transcoder Rails Library'
   s.description = 'AWS Elastic Transcoder Rails Library'
   s.license     = 'MIT'
