@@ -1,11 +1,13 @@
 # frozen_string_literal: true
 
-# FIXME: 警告が発生 => warning: already initialized constant Digest::REQUIRE_MUTEX
-# FIXME: requireすることで発生している。
-require 'Digest'
+require 'digest'
 
 module AwsTranscoderRails
-  class << self
+  # Handles the configuration object. Check out {FirebaseIdToken} for more
+  # info on how to use it.
+  LIB_PATH = File.expand_path('../../', __FILE__)
+
+  class Configuration
     attr_accessor :region,
                   :segment_duration,
                   :pipeline_id,
@@ -14,12 +16,9 @@ module AwsTranscoderRails
                   :output_key_prefix,
                   :use_preset
 
-    def output_key(input_key)
-      Digest::SHA256.hexdigest(input_key.encode('UTF-8'))
+    def initialize
+      @region = 'us-east-1'
+      @segment_duration = 10
     end
   end
-
-  self.region = 'us-east-1'
-  self.segment_duration = 10
-  self.pipeline_id = '1512644951004-mem7t0'
 end
