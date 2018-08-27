@@ -8,8 +8,10 @@ Gemfile.lock
 capybara-*.html
 .rspec
 /log
+test/dummy/log/*.log
 /tmp
 /db/*.sqlite3
+test/dummy/db/*.sqlite3
 /db/*.sqlite3-journal
 /public/system
 /coverage/
