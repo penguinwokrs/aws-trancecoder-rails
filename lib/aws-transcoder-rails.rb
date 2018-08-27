@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 # require 'aws_transcoder_rails/config'
-# require 'aws_transcoder_rails/preset'
-# require 'aws-sdk-elastictranscoder'
+require 'aws_transcoder_rails/preset'
+require 'aws-sdk-elastictranscoder'
 
 module AwsTranscoderRails
   # class << self
