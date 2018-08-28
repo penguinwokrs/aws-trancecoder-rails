@@ -2,6 +2,7 @@
 
 require 'aws-transcoder-rails/config'
 require 'aws-transcoder-rails/preset'
+require 'aws-transcoder-rails/transcoder/job'
 
 module AwsTranscoderRails
   class << self

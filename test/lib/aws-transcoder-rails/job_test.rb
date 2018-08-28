@@ -7,6 +7,8 @@ module AwsTranscoderRails
     end
 
     test 'should job create' do
+      binding.pry
+      client = AwsTranscoderRails::Transcoder::Job.create(@file)
       assert true
     end
   end

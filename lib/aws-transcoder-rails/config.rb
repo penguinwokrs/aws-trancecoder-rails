@@ -13,7 +13,6 @@ module AwsTranscoderRails
                   :use_preset
 
     def initialize
-      @region = ENV ['AWS_REGION'] || 'us-east-1'
       @segment_duration = 10
     end
 
