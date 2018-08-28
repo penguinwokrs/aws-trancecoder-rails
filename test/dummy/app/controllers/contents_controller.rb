@@ -1,5 +1,3 @@
 class ContentsController < ApplicationController
-  def create
-
-  end
+  def create; end
 end

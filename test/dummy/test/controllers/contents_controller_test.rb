@@ -1,9 +1,8 @@
 require 'test_helper'
 
-class ContentsControllerTest < ActionDispatch::IntegrationTest
-  test "should get create" do
-    get contents_create_url
+class ContentsControllerTest < ActionController::TestCase
+  test 'should job create' do
+    post :create
     assert_response :success
   end
-
 end

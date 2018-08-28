@@ -12,6 +12,7 @@ test/dummy/log/*.log
 /tmp
 /db/*.sqlite3
 test/dummy/db/*.sqlite3
+test/dummy/tmp
 /db/*.sqlite3-journal
 /public/system
 /coverage/
@@ -19,6 +20,8 @@ test/dummy/db/*.sqlite3
 *.orig
 rerun.txt
 pickle-email-*.html
+doc
+.yardoc
 
 # TODO Comment out this rule if you are OK with secrets being uploaded to the repo
 config/initializers/secret_token.rb

@@ -22,4 +22,8 @@ Gem::Specification.new do |s|
   s.add_dependency 'aws-sdk-elastictranscoder', '1.0.0'
   s.add_development_dependency 'minitest', '~> 5.11', '>= 5.11.0'
   s.add_development_dependency 'sqlite3'
+  s.add_development_dependency 'pry-rails'
+  s.add_development_dependency 'yard'
+  s.add_development_dependency 'rubocop'
+  s.add_development_dependency 'minitest-retry'
 end
