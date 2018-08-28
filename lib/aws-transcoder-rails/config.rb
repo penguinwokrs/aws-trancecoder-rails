@@ -6,7 +6,6 @@ module AwsTranscoderRails
   class Configuration
     attr_accessor :region,
                   :segment_duration,
-                  :client,
                   :pipeline_id,
                   :access_key,
                   :secret_key,

@@ -27,5 +27,8 @@ $ gem install transcoder
 ## Contributing
 Contribution directions go here.
 
+## Credits
+Many thanks to the [Big Buck Bunny Team](https://peach.blender.org/the-team/) for creating the video used in this tutorial.
+
 ## License
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).

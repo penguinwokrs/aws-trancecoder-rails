@@ -7,17 +7,6 @@ module AwsTranscoderRails
   class Job
     attr_reader :outputs
 
-
-
-    def self.client
-      config = AwsTranscoderRails.configuration.to_credentials.compact
-      if config.present?
-        @client ||= Aws::ElasticTranscoder::Client.new(config)
-      else
-        ""
-      end
-    end
-
     def self.create(input_key)
       new.create(input_key)
     end
@@ -26,10 +15,10 @@ module AwsTranscoderRails
     end
 
     def create(input_key)
-
+      return
       input = {key: input_key}
 
-      transcoder_client.job(
+      client.job(
         pipeline_id: pipeline_id,
         input: input,
         output_key_prefix: "#{output_key_prefix}#{output_key(input_key)}/",
@@ -53,6 +42,12 @@ module AwsTranscoderRails
         output_keys: create_preset(input_key).map {|output| output[:key]}
       }
     end
+
+    def client
+      config = configuration.to_credentials.compact
+      @client ||= config.present? ? Aws::ElasticTranscoder::Client.new(config) : Aws::ElasticTranscoder::Client
+    end
+
 
     def output_key(input_key)
       Digest::SHA256.hexdigest(input_key.encode('UTF-8'))
