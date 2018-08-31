@@ -8,7 +8,7 @@ require 'aws-transcoder-rails/version'
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = 'aws-transcoder-rails'
-  s.version     = AwsTrancecoderRails::VERSION
+  s.version     = AwsTranscoderRails::VERSION
   s.authors     = ['penguinwokrs']
   s.email       = ['dev.and.penguin@gmail.com']
   s.homepage    = 'https://github.com/penguinwokrs'

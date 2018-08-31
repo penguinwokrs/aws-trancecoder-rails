@@ -13,7 +13,7 @@ module AwsTranscoderRails
                   :use_preset
 
     def initialize
-      @segment_duration = 10
+      @segment_duration = "10"
     end
 
     def to_credentials

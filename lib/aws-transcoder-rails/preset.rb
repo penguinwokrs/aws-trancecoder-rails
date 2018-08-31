@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module AwsTrancecoderRails
+module AwsTranscoderRails
   HLS_AUDIO_64K = {
     preset_id: '1351620000001-200071',
     key: 'hls_audio_64k/'
