@@ -19,7 +19,11 @@ module AwsTranscoderRails
   }.freeze
   HLS_1500K = {
     preset_id: '1351620000001-200020',
-    key: 'hls_1000k/'
+    key: 'hls_1500k/'
+  }.freeze
+  HLS_2000K = {
+    preset_id: '1351620000001-200010',
+    key: 'hls_2000k/'
   }.freeze
 
   # HLS_2000K = '1351620000001-200010'
